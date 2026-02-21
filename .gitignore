@@ -213,3 +213,9 @@ server/
 
 # Leaderboard data
 docs/
+
+# iOS/Xcode build artifacts
+.deriveddata/
+DerivedData/
+*.xcuserstate
+xcuserdata/
