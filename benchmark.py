@@ -481,7 +481,7 @@ def compute_total_score(results):
 
         time_score = max(0, 1 - avg_time / time_baseline_ms)
 
-        level_score = (0.80 * avg_f1) + (0.10 * time_score) + (0.10 * on_device_ratio)
+        level_score = (0.70 * avg_f1) + (0.15 * time_score) + (0.15 * on_device_ratio)
         total_score += weight * level_score
 
     return total_score * 100
